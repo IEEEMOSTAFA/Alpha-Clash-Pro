@@ -13,9 +13,17 @@ function getARandomAlphabet(){
     // get or create an alphabet array
     // const alphabets = ['a','b']
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-    const alphabet = alphabetString.split('');
-    console.log(alphabet);
+    const alphabets = alphabetString.split('');
+    console.log(alphabets);
 
 
     // get a random index between 0 to 25;
+    const randomNumber = Math.random()*25;
+    const index = Math.round(randomNumber);
+    // console.log(index);
+
+    const alphabet = alphabets[index];
+    // console.log(index,alphabet);
+    return alphabet;
+
 }
